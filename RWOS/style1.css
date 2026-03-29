@@ -1,0 +1,157 @@
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif, monospace;
+    background-color: #000; 
+    color: #00BF00;
+    background-image: url('back.jpg');
+    background-size: cover;
+    overflow: hidden; 
+}
+
+/* Welcome box - right side */
+.welcome-box {
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 2px #00BF00;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-box h1 {
+    color: #00BF00;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 0.5rem 0;
+}
+
+.welcome-box img {
+    width: 80%; 
+    height: auto;
+    margin: 0.5rem 0; 
+}
+
+#welcomehandle {
+    width: 30px;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    cursor: move;
+}
+#secondhandle {
+    width: 30px;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: -10px;
+    left: 5px;
+    cursor: move;
+}
+.welcome-box p {
+    color: #00BF00;
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 18px;
+}
+
+.welcome-box a {
+    display: block;
+    color: #00e466;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0.5rem 0;
+}
+.welcome-box welcome-handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1%;
+    height: 1%;
+}
+.welcome-box a:hover {
+    text-decoration: underline;
+}
+.welcome-box input[type="text"] {
+    width: 50%;
+    height: 30px;
+    margin-top: 0.5rem;
+    border: solid 2px #00BF00;
+    border-radius: 10px;
+    background-color: black;
+    color: #00BF00;
+    font-size: 18px;
+}
+/* Second box - left side */
+.second-box {
+    border-radius: 10px;
+    padding: 10px;
+    border: solid 2px #00BF00;
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.second-box h1 {
+    color: #00BF00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+}
+.second-box img {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    width: 30%;
+}
+
+.Header {
+    position: fixed;
+    border: #00BF00;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3%;
+    background-color: black;
+
+    display: flex;
+    align-items: center;          
+    justify-content: space-evenly;
+
+    padding: 0 10px;
+}
+
+.Header p {
+    border: #00BF00;
+    color: #00BF00;
+    margin: 0 0.5rem; 
+    font-family: Helvetica, sans-serif, monospace;
+    font-size: 1vw;
+}
