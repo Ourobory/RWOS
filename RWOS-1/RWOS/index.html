@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <link rel="stylesheet" href="style1.css">
+        <title>RWOS</title>
+    </head>
+
+  <body>
+    <div id = "welcome" class="welcome-box">
+        <img id="welcomehandle" src="handle.png" class="handle" alt="handle" width="1">
+        <img id="closewelcome" class = "close-button" src="close.png" alt="Close" onclick="closeWindow(document.getElementById('welcome'))">
+        <h1>Welcome to</h1>
+        <img src="RWOS.png" alt="My Image" id = "welcomeimage">
+        <p>Look at this!</p>
+        <a href="https://open.spotify.com/artist/38SKxCyfrmNWqWunb9wGHP?si=3biI7mAQQwSKvzziiWuSBw">Click here to listen to spotify!</a>
+        <input type="text" id="input" name="input">
+    </div>
+    <div class="second-box" id="secondbox">
+        <img id="secondhandle" src="handle.png" class="handle" alt="handle" width="1">
+        <h1>TWO WHOLE BOXES?!</h1>
+        <img src="skate.gif" alt="My Gif" id="skategif">
+        <img id="closesecond" class = "close-button" src="close.png" alt="Close" onclick="closeWindow(document.getElementById('secondbox'))">
+    </div>
+    <div class="Header">
+        <p style="cursor: pointer" id="welcomeopen" onclick="openWindow(document.getElementById('welcome'))">RWOS </p>
+        <p id="datetime"></p>
+        <p> something else</p>
+        <p> 3rd text</p>
+        <p>v0.8</p>
+    </div>
+    <div id ="soundapp" class="soundapp" >
+        <img id="soundapphandle" src="handle.png" class="handle" alt="handle">
+        <img id="closewelcome" class = "close-button" src="close.png" alt="Close" onclick="closeWindow(document.getElementById('soundapp'))">
+        <p>New tab</p>
+    </div>
+    <div class = "various">
+        <img id ="secondopen" src="skate.png" alt="Second Open" onclick="openWindow(document.getElementById('secondbox'))">
+        <img id="soundapp" src="sound.png" alt="Sound App" onclick="openWindow(document.getElementById('soundapp')) ">
+        <img id="placeholder" src="placeholder.png" alt="placeholder">
+        <img id="placeholder" src="placeholder.png" alt="placeholder">
+        <img id="placeholder" src="placeholder.png" alt="placeholder">
+        <img id="placeholder" src="placeholder.png" alt="placeholder">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
