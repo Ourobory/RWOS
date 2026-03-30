@@ -1,9 +1,12 @@
 var welcomeScreen = document.querySelector("#welcome")
+var maxZ = 10;
 function closeWindow(element) {
   element.style.display = "none"
 }
 function openWindow(element) {
   element.style.display = "flex"
+  maxZ++;
+  element.style.zIndex = maxZ;
 }
 window.setInterval(function() {
                 document.getElementById("datetime").innerHTML = new Date().toLocaleString();
@@ -13,13 +16,12 @@ function dragElement(elmnt) {
     var initialY = 0;
     var currentX = 0;
     var currentY = 0;
-    if (document.getElementById(elmnt.id + "handle")) {
-    document.getElementById(elmnt.id + "handle").onmousedown = startDragging;} 
-    else {
-    elmnt.onmousedown = startDragging;}
+    elmnt.onmousedown = startDragging;
     function startDragging(e) {
     e = e || window.event;
     e.preventDefault();
+    maxZ++;
+    elmnt.style.zIndex = maxZ;
     initialX = e.clientX;
     initialY = e.clientY;
     document.onmouseup = stopDragging;
@@ -49,4 +51,3 @@ function dragElement(elmnt) {
 dragElement(document.getElementById("welcome"));
 dragElement(document.getElementById("secondbox"));
 dragElement(document.getElementById("soundapp"));
-closeWindow(document.getElementById("soundapp"));
